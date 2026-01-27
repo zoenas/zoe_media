@@ -36,7 +36,7 @@ services:
     # 如果需要使用bridge(桥接)网络,请取消ports(端口映射)注释,并注释network_mode
     # 端口映射规则为,宿主机端口:容器内部端口
     ports:
-      - 18096:8096
+      - 18096:8098
     # 如果遇到海报全部裂开或日志中 permission denied,以下二选一
     # 还不行的话,自己给宿主机 embyCache 读写权限
     # privileged: true
