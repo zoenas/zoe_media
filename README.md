@@ -12,11 +12,7 @@
 
 * 302播放使用的是 https://github.com/bpking1/embyExternalUrl/tree/main/emby2Alist
 *  默认账号密码 admin/admin123
-
-## 其他容器
-    Postgres16.x
-    cd2
-
+## Docker Compose 
 ```yaml
 services:
   zoe_media:
@@ -57,5 +53,10 @@ services:
       - EMBY_API_KEY=your_real_api_key_here
     restart: always
 ```
+## 其他容器
+    Postgres16.x
+    cd2
+
+
 -----
 
