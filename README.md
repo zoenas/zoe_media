@@ -10,6 +10,7 @@
     CD2目前主要作用监听入库 移动 重命名等操作，转存时更快的响应，目前在考虑需不需要移除
     PG库目前暂时先不考虑移除    
 
+* 302播放使用的是 https://github.com/bpking1/embyExternalUrl/tree/main/emby2Alist
 *  默认账号密码 admin/admin123
 
 ## 其他容器
