@@ -28,8 +28,7 @@ services:
     ports:
       - "8080:8080"
 #    volumes:
-#      # - ./logs:/app/logs
-#      # - /path/to/media:/media
+#      - /path/to/media:/media
   zoe_media_emby:
     image: zoenas/zoe_media_emby:latest
     container_name: zoe_media_emby
