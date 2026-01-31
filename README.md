@@ -5,6 +5,7 @@
 
 ## 介绍
     暂时不考虑开源
+    不收费 但是认证方式没考虑好怎么做，临时认证 LICENSE_KEY
     功能很多缺失目前只能满足115网盘常规的 转存-整理-生成STRM-刮削-302播放细节待补充
     当前版本并不是完善的一个版本，使用需谨慎~
     CD2目前主要作用监听入库 移动 重命名等操作，转存时更快的响应，目前在考虑需不需要移除
@@ -19,7 +20,8 @@ services:
     image: zoenas/zoe_media:latest
     container_name: zoe_media
     restart: on-failure
-#    environment:
+    environment:
+     - LICENSE_KEY=hfEY95Z2kMAQ8+NzyfSrhJz5VXtYtNQ5XdGEcfpjV55i48Lnjn61fvbvepssXZ6Q
 #      - DB_TYPE=postgres
 #      - DB_HOST=192.168.5.220
 #      - DB_PORT=15433
