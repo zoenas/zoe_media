@@ -16,19 +16,21 @@
 ```yaml
 services:
   zoe_media:
-    image: zoenas/zoemedia:latest
+    image: zoenas/zoe_media:latest
     container_name: zoe_media
     restart: on-failure
-    environment:
-      - DB_HOST=local
-      - DB_PORT=5433
-      - DB_NAME=zoe_media
-      - DB_USER=zoe_media
-      - DB_PASSWORD=zoe_media
+#    environment:
+#      - DB_TYPE=postgres
+#      - DB_HOST=192.168.5.220
+#      - DB_PORT=15433
+#      - DB_NAME=zoe_media
+#      - DB_USER=zoemedia
+#      - DB_PASSWORD=zoe_admin221106
     ports:
-      - "8080:8080"
-#    volumes:
-#      - /path/to/media:/media
+      - "28080:8080"
+    volumes:
+      - /vol1/1000/AppData/zoe_media:/app/config 
+      - /vol2/1000/Media/demo:/media
   zoe_media_emby:
     image: zoenas/zoe_media_emby:latest
     container_name: zoe_media_emby
