@@ -8,7 +8,7 @@
     功能很多缺失目前只能满足115网盘常规的 转存-整理-生成STRM-刮削-302播放细节待补充
     当前版本并不是完善的一个版本，使用需谨慎~
     CD2目前主要作用监听入库 移动 重命名等操作，转存时更快的响应，目前在考虑需不需要移除
-    PG库目前暂时先不考虑移除    
+    PG库 可选 但是要求是pg16      
 
 * 302播放使用的是 https://github.com/bpking1/embyExternalUrl/tree/main/emby2Alist
 *  默认账号密码 admin/admin123
